@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url(‘https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap’);
 
 * {
   border: 0;
@@ -159,6 +159,121 @@ h4.h4-about-us {
   .content {
     padding-right: 2em;
   }
+}
+
+/* OUR TOURS -----------------------------------------------------*/
+
+.tours {
+    background-color: #F4F0ED;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.section__title {
+    color: #152A34;
+    font-weight: 600;
+    font-size: 36px;
+    align-self: center;
+}
+
+.tours__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.tours__card {
+    background-color: #152A34;
+    color: white;
+    width: 30%;
+    display: grid;
+}
+
+@media (orientation: portrait) {
+    
+    .tours__container {
+        flex-direction: column;
+    }
+
+    .tours__card {
+        width: 100%;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+.tours__imgcontainer {
+    background-color: orange;
+    height: 250px;
+    width: 100%;
+}
+
+.tours__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tours__info {
+    padding: 12px;
+    display: grid;
+    grid-rows: auto auto;
+    grid-columns: auto auto;
+    column-gap: 12px;
+}
+
+.tours__name {
+    grid-area: 1 / 1 / span 1 / span 1;
+    font-size: 24px;
+}
+
+.tours__book {
+    grid-area: 1 / 2 / span 1 / span 1;
+
+    background-color: #EC4E20;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    width: 80px;
+    height: 24px;
+}
+
+.tours__book:hover {
+    background-color: white;
+    color: #EC4E20;
+}
+
+.tours__desc {
+    display: block;
+    font-size: 12px;
+}
+
+.button__green {
+    background-color: #12C093;
+    border-radius: 25px;
+    border: 2px solid #12C093;
+    
+    padding: 8px;
+    max-width: 50%;
+    min-width: 200px;
+    align-self: center;
+    
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button__green:hover {
+    background-color: transparent;
+    color: #12C093;
 }
 
 /* FOOTER --------------------------------------------------------*/
