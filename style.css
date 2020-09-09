@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 /* HEADER SECTION --------------------------------------------------------*/
 .header_container {
   background-image: url(images/MAIN_BG.png);
@@ -17,10 +18,11 @@
   background-position: 50% 50%;
 }
 
+
 /* NAVIGATION STYLING */
 .nav-list {
   margin: 0 auto;
-  padding: 2rem 9rem;
+  padding: 1rem 9rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -35,7 +37,7 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  padding: 0px 25px;
+  padding: 0 25px;
 }
 .nav-item a:hover {
   color: #ec4e20;
@@ -44,14 +46,37 @@
 
 .nav-item:first-child {
   margin-right: auto;
+  padding-top: 1rem;
 }
 
-/* STICKY NAV */
-.nav-sticky {
-  background-color: #12c093;
-  position: fixed;
-  width: 100%;
+/* HAMBURGER NAV */
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
+
+
+.toggle-button .bar {
+  height:3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+  /* STICKY NAV */
+  .nav-sticky {
+    background-color: #12c093;
+    position: fixed;
+    width: 100%;
+    transition: 0.7s;
+  }
 
 /* HEADER TEXT */
 .header_text h1 {
@@ -64,7 +89,7 @@
   max-width: 200px;
   /* padding: 3rem 10rem; */
   padding-left: 10rem;
-  padding-top: 3rem;
+  padding-top: 7rem;
 }
 
 .header_text h2 {
@@ -82,6 +107,7 @@
   justify-content: center;
   padding-top: 12rem;
 }
+
 
 /*ABOUT US --------------------------------------------------------*/
 .about-us {
@@ -134,7 +160,30 @@ h4.h4-about-us {
   padding: 1em;
 }
 
-@media only screen and (max-width: 650px) {
+/* media queries ---------------------------*/
+@media all and (max-width: 650px) {
+  
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 1rem 7rem;
+    text-align: center;
+    width: 150%  
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
   section.about-us {
     max-width: 100%;
     height: 1000px;
@@ -165,6 +214,19 @@ h4.h4-about-us {
   }
   .content {
     padding-right: 2em;
+  }
+
+  .header_container {
+    max-width: 100%;
+    height: 1000px;
+    columns: 1;
+    align-content: left;
+  }
+
+  .header_text {
+    text-align: left;
+    padding-top: 15rem;
+    margin: 0 auto;
   }
 }
 
@@ -264,14 +326,14 @@ h4.h4-about-us {
 .button__green {
   background-color: #12c093;
   border-radius: 25px;
-  border: 5px solid #12c093;
+  border: 2px solid #12c093;
 
 
-  padding: 8px 30px;
+  padding: 9px 30px;
   max-width: 50%;
   min-width: 200px;
   align-self: center;
-
+  
   font-weight: 600;
   font-size: 15px;
   color: white;
