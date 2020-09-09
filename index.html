@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iceland Tours</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("nav-sticky", window.scrollY > 0);
+        })
+    </script>
 </head>
 <body>
-    <div class="header_container">
-        <nav>
+    <header class="header_container">
+        <nav class="">
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="#">
@@ -40,7 +46,7 @@
             <input type="image" src="images/bookNowButton.png" onMouseOver="this.src='images/bookNowButton_hover.png'" onMouseOut="this.src='images/bookNowButton.png'">
             <!-- <a href="#"><img src="Images/bookNowButton.png"></a> -->
         </div>
-    </div>
+    </header>
 
             <!--This is ABOUT US-->
             <section class="about-us">

@@ -46,6 +46,14 @@
   margin-right: auto;
 }
 
+/* STICKY NAV */
+.nav-sticky {
+  background-color: #12C093;
+  position: fixed;
+  width: 100%;
+}
+
+
 /* HEADER TEXT */
 .header_text h1 {
   display: flex;
