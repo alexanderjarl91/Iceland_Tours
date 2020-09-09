@@ -20,9 +20,18 @@
 
 
 /* NAVIGATION STYLING */
-.nav-list {
-  margin: 0 auto;
+
+.mainNav {
+  display: flex;
+  justify-content: flex-end;
   padding: 1rem 9rem;
+}
+
+.nav-logo {
+  margin-right: auto;
+}
+
+.nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -44,16 +53,12 @@
   font-style: bold;
 }
 
-.nav-item:first-child {
-  margin-right: auto;
-  padding-top: 1rem;
-}
 
 /* HAMBURGER NAV */
 .toggle-button {
-  position: absolute;
+  /*position: absolute;
   top: 0.75rem;
-  right: 1rem;
+  right: 1rem;*/
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -70,13 +75,39 @@
 }
 
 
-  /* STICKY NAV */
-  .nav-sticky {
-    background-color: #12c093;
-    position: fixed;
-    width: 100%;
-    transition: 0.7s;
-    z-index: 1000;
+/* STICKY NAV */
+.nav-sticky {
+  background-color: #12c093;
+  position: fixed;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 1000;
+  }
+
+/* NAV Media Query */
+@media all and (max-width: 650px) {
+
+    .toggle-button {
+      display: flex;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      background-color: #152a34;
+    }
+  
+    .nav-item {
+      padding: 1rem 7rem;
+      text-align: center;
+      width: 150% 
+    }
+  
+    .nav-list.active {
+        display: flex;
+      }
   }
 
 /* HEADER TEXT */
@@ -109,29 +140,30 @@
   padding-top: 12rem;
 }
 
-
 /*ABOUT US --------------------------------------------------------*/
 .about-us {
   font-family: "Montserrat", sans-serif;
-  background-color: #152a34;
+  background-color: #152A34;
   padding: 2em;
   text-align: center;
   color: white;
 }
-
+.h3 {
+  font-size:30px;
+}
 .first-container {
   padding-bottom: 2em;
+  margin: 0 auto;
+  max-width: 70%;
 }
-
 .para1 {
   padding-bottom: 1em;
 }
-
 h4.h4 {
-  margin-bottom: 2em;
-  color: #ec4e20;
+  margin-bottom: 1rem;
+  font-size:23px;
+  color: #12C093;
 }
-
 .Img-about-us {
   width: 300px;
   height: 300px;
@@ -140,13 +172,11 @@ h4.h4 {
   border-radius: 50%;
   padding: 1em;
 }
-
 /*media queries*/
 @media only screen and (min-width: 768px) {
   div.second-container {
     grid-template-columns: 2;
   }
-
   div.third-container {
     padding-left: 2em;
     text-align: left;
@@ -159,7 +189,6 @@ h4.h4 {
     display: flex;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .about-us {
     padding: auto;
@@ -168,7 +197,6 @@ h4.h4 {
     height: 300px;
     width: 300px;
   }
-
   .Img-about-us {
     width: 400px;
     height: 400px;
@@ -177,14 +205,11 @@ h4.h4 {
     border-radius: 50%;
     padding: 1em;
   }
-
   div.third-container {
     margin-top: 3em;
   }
-
   .container-base {
     display: block;
-
     margin-left: 12em;
     writing-mode: horizontal-tb;
     padding: 0 5em;
@@ -390,10 +415,7 @@ h4.h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 5rem;
-  padding-left: 35rem;
 }
-
 .findUs {
   font-family: Montserrat;
   font-style: bold;
@@ -403,4 +425,5 @@ h4.h4 {
   line-height: 12px;
   padding-top: 8rem;
   padding-bottom: 1rem;
+  min-width:12rem;
 }

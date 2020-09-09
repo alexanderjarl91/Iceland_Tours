@@ -5,35 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iceland Tours</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("nav-sticky", window.scrollY > 0);
-        })
-
-        const toggleButton = document.getElementsByClassName('toggle-button')[0]
-        const navItems = document.getElementsByClassName('nav-item')[0]
-
-        toggleButton.addEventListener('click', () => {
-            navItem.classList.toggle('active')
-        })
-    </script>
 </head>
 <body>
     <header class="header_container" id="top">
         <nav class="mainNav">
-            <a href="#" class="toggle-button">
+            <div class="nav-logo">
+                <a href="#top">
+                    <img src="images/LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </a>
+            </div>
             <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#top">
-                        <img src="images/LOGO.png" alt="logo">
-                    </a>
-                </li>
                 <li class="nav-item">
                     <a href="#about">About us</a>
                 </li>
@@ -62,7 +48,7 @@
     </header>
 
             <!--This is ABOUT US-->
-            <section class="about-us">
+            <section class="about-us" id="about">
       <div class="container-base">
         <div class="first-container">
           <h3 class="h3">
@@ -83,19 +69,11 @@
             <div class="third-container">
               <div><h4 class="h4">About Us</h4></div>
               <p class="para1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas voluptates laudantium dolor deleniti ducimus sunt natus
-                porro. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas voluptates laudantium dolor deleniti ducimus sunt natus
-                porro.
-
+                See Iceland Tours was founded in 2018 by a couple of adventurous friends that wanted to share their unique experiences and love for Iceland with some like-minded people.
               </p>
 
               <p class="para2">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-                iste ab officia libero necessitatibus excepturi porro eveniet
-                iusto facilis, dolorum ipsam labore, ratione sapiente aperiam
-                qui dolores rerum, dignissimos nihil.
+                Between them, John and Jón have almost three decades experience as tour-guides, both in and outside of Iceland. Their mantra is that life is there to be enjoyed and they are willing to guarantee that with See Iceland Tours you’ll have the experience of a lifetime.
               </p>
             </div>
           </div>
@@ -168,11 +146,7 @@
      
 <!--End// Jón Kristján / GALLERY-->
 
-
-
-
-
-            
+<!--FOOTER-->            
     <footer id="contact">
         <div class="container2">
            <div class="leftfooter"> 
@@ -195,7 +169,22 @@
                     </div>
             </div>
         </div>
-    
-</footer>
+    </footer>
+
+<!--JAVASCRIPT-->
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("nav-sticky", window.scrollY > 0);
+    })
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navList = document.getElementsByClassName('nav-list')[0]
+    const mainNav = document.getElementsByClassName('mainNav')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
 </body>
 </html>
