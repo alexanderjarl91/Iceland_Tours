@@ -1,0 +1,374 @@
+@import url(‘https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap’);
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER SECTION --------------------------------------------------------*/
+.header_container {
+  background-image: url(images/MAIN_BG.png);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* NAVIGATION STYLING */
+.nav-list {
+  margin: 0 auto;
+  padding: 2rem 9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 0px 25px;
+}
+.nav-item a:hover {
+  color: #ec4e20;
+  font-style: bold;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+/* HEADER TEXT */
+.header_text h1 {
+  display: flex;
+  color: white;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif, bold;
+  justify-content: left;
+  margin: 0;
+  max-width: 200px;
+  /* padding: 3rem 10rem; */
+  padding-left: 10rem;
+  padding-top: 3rem;
+}
+
+.header_text h2 {
+  display: flex;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif, bold;
+  justify-content: left;
+  margin: 0;
+  padding-left: 10rem;
+}
+
+.bookNowButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 12rem;
+}
+
+/*ABOUT US --------------------------------------------------------*/
+.about-us {
+  background-color: #152a34;
+  padding-top: 20px;
+  margin-top: -40px;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.headline-wraper {
+  font-family: "Montserrat", sans-serif, bold;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+
+  padding-bottom: 2em;
+}
+.h4-about-us {
+  text-align: center;
+  width: calc(100% - 400px);
+}
+
+h4.h4-about-us {
+  font-family: "Montserrat", sans-serif, bold;
+  color: white;
+  padding-left: 17em;
+  padding-top: 5em;
+}
+
+.p-about-us {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 5em;
+  font-size: medium;
+  color: white;
+}
+
+.details-wrap img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  padding: 50px;
+}
+
+.details-wrap {
+  display: inline-flex;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 650px) {
+  section.about-us {
+    max-width: 100%;
+    height: 1000px;
+    columns: 1;
+    padding-top: 0%;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h4.h4-about-us {
+    width: 500px;
+    display: flex;
+  }
+  div.details-wrap {
+    display: grid;
+  }
+  p.p-about-us {
+    padding: 1em;
+    text-align: center;
+  }
+  img.image-about-us {
+    text-align: center;
+  }
+  .image-wrap {
+    width: 650px;
+    text-align: center;
+  }
+  .content {
+    padding-right: 2em;
+  }
+}
+
+/* OUR TOURS -----------------------------------------------------*/
+
+.tours {
+  background-color: #f4f0ed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.section__title {
+  color: #152a34;
+  font-weight: 600;
+  font-size: 36px;
+  align-self: center;
+}
+
+.tours__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tours__card {
+  background-color: #152a34;
+  color: white;
+  width: 30%;
+  display: grid;
+}
+
+@media (orientation: portrait) {
+  .tours__container {
+    flex-direction: column;
+  }
+
+  .tours__card {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.tours__imgcontainer {
+  background-color: orange;
+  height: 250px;
+  width: 100%;
+}
+
+.tours__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tours__info {
+  padding: 12px;
+  display: grid;
+  grid-rows: auto auto;
+  grid-columns: auto auto;
+  column-gap: 12px;
+}
+
+.tours__name {
+  grid-area: 1 / 1 / span 1 / span 1;
+  font-size: 24px;
+}
+
+.tours__book {
+  grid-area: 1 / 2 / span 1 / span 1;
+
+  background-color: #ec4e20;
+  font-weight: 600;
+  color: white;
+  border-radius: 25px;
+  width: 80px;
+  height: 24px;
+}
+
+.tours__book:hover {
+  background-color: white;
+  color: #ec4e20;
+}
+
+.tours__desc {
+  display: block;
+  font-size: 12px;
+}
+
+.button__green {
+  background-color: #12c093;
+  border-radius: 25px;
+  border: 2px solid #12c093;
+
+  padding: 8px;
+  max-width: 50%;
+  min-width: 200px;
+  align-self: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button__green:hover {
+  background-color: transparent;
+  color: #12c093;
+}
+
+/* Gallery  START --------------------------------------*/
+
+.Color {
+  background-color: #152a34;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.Image-container {
+  max-width: 1290px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Image-container img {
+  /* float: left;*/
+  width: 302px;
+  height: 302px;
+  padding: 24px;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.Image-container img:hover {
+  opacity: 0.7;
+  transform: scale(1.03);
+}
+
+.Section-Title {
+  text-align: center;
+  color: #12c093;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -95px;
+  margin-bottom: 50px;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-bottom: -100px;
+  margin-top: 37px;
+}
+
+/* Gallery ENDED --------------*/
+
+/* FOOTER --------------------------------------------------------*/
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  background-color: #12c093;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.leftfooter {
+  margin: 0 5rem;
+}
+.leftfooter h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif, bold;
+}
+
+.leftfooter p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif, bold;
+  color: white;
+  max-width: 12rem;
+  padding-top: 1rem;
+  padding-left: 0rem;
+}
+
+.rightfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 5rem;
+  padding-left: 35rem;
+}
+
+.findUs {
+  font-family: Montserrat;
+  font-style: bold;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 12px;
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
