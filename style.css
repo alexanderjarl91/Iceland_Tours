@@ -48,11 +48,10 @@
 
 /* STICKY NAV */
 .nav-sticky {
-  background-color: #12C093;
+  background-color: #12c093;
   position: fixed;
   width: 100%;
 }
-
 
 /* HEADER TEXT */
 .header_text h1 {
@@ -172,117 +171,165 @@ h4.h4-about-us {
 /* OUR TOURS -----------------------------------------------------*/
 
 .tours {
-    background-color: #F4F0ED;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    padding: 80px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
+  background-color: #f4f0ed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .section__title {
-    color: #152A34;
-    font-weight: 600;
-    font-size: 36px;
-    align-self: center;
+  color: #152a34;
+  font-weight: 600;
+  font-size: 36px;
+  align-self: center;
 }
 
 .tours__container {
-    display: flex;
-    justify-content: space-between;
-    min-height: 400px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .tours__card {
-    background-color: #152A34;
-    color: white;
-    width: 30%;
-    display: grid;
+  background-color: #152a34;
+  color: white;
+  width: 30%;
+  display: grid;
 }
 
 @media (orientation: portrait) {
-    
-    .tours__container {
-        flex-direction: column;
-    }
+  .tours__container {
+    flex-direction: column;
+  }
 
-    .tours__card {
-        width: 100%;
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
+  .tours__card {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 .tours__imgcontainer {
-    background-color: orange;
-    height: 250px;
-    width: 100%;
+  background-color: orange;
+  height: 250px;
+  width: 100%;
 }
 
 .tours__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tours__info {
-    padding: 12px;
-    display: grid;
-    grid-rows: auto auto;
-    grid-columns: auto auto;
-    column-gap: 12px;
+  padding: 12px;
+  display: grid;
+  grid-rows: auto auto;
+  grid-columns: auto auto;
+  column-gap: 12px;
 }
 
 .tours__name {
-    grid-area: 1 / 1 / span 1 / span 1;
-    font-size: 24px;
+  grid-area: 1 / 1 / span 1 / span 1;
+  font-size: 24px;
 }
 
 .tours__book {
-    grid-area: 1 / 2 / span 1 / span 1;
+  grid-area: 1 / 2 / span 1 / span 1;
 
-    background-color: #EC4E20;
-    font-weight: 600;
-    color: white;
-    border-radius: 25px;
-    width: 80px;
-    height: 24px;
+  background-color: #ec4e20;
+  font-weight: 600;
+  color: white;
+  border-radius: 25px;
+  width: 80px;
+  height: 24px;
 }
 
 .tours__book:hover {
-    background-color: white;
-    color: #EC4E20;
+  background-color: white;
+  color: #ec4e20;
 }
 
 .tours__desc {
-    display: block;
-    font-size: 12px;
+  display: block;
+  font-size: 12px;
 }
 
 .button__green {
-    background-color: #12C093;
-    border-radius: 25px;
-    border: 2px solid #12C093;
-    
-    padding: 8px;
-    max-width: 50%;
-    min-width: 200px;
-    align-self: center;
-    
-    font-weight: 600;
-    font-size: 18px;
-    color: white;
-    text-transform: uppercase;
+  background-color: #12c093;
+  border-radius: 25px;
+  border: 2px solid #12c093;
+
+  padding: 8px;
+  max-width: 50%;
+  min-width: 200px;
+  align-self: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .button__green:hover {
-    background-color: transparent;
-    color: #12C093;
+  background-color: transparent;
+  color: #12c093;
 }
+
+/* Gallery  START --------------------------------------*/
+
+.Color {
+  background-color: #152a34;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.Image-container {
+  max-width: 1290px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Image-container img {
+  /* float: left;*/
+  width: 302px;
+  height: 302px;
+  padding: 24px;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.Image-container img:hover {
+  opacity: 0.7;
+  transform: scale(1.03);
+}
+
+.Section-Title {
+  text-align: center;
+  color: #12c093;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -95px;
+  margin-bottom: 50px;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-bottom: -100px;
+  margin-top: 37px;
+}
+
+/* Gallery ENDED --------------*/
 
 /* FOOTER --------------------------------------------------------*/
 
