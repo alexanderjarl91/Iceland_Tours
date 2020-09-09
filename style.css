@@ -264,15 +264,16 @@ h4.h4-about-us {
 .button__green {
   background-color: #12c093;
   border-radius: 25px;
-  border: 2px solid #12c093;
+  border: 5px solid #12c093;
 
-  padding: 8px;
+
+  padding: 8px 30px;
   max-width: 50%;
   min-width: 200px;
   align-self: center;
 
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   text-transform: uppercase;
 }
