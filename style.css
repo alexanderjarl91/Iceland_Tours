@@ -76,6 +76,7 @@
     position: fixed;
     width: 100%;
     transition: 0.7s;
+    z-index: 1000;
   }
 
 /* HEADER TEXT */
